@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #e9e6d4;
+}
+
+.home {
+  position: relative;
+  cursor: pointer;
+  transform: 0.5s;
+}
+
+.home a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #6eb43f;
+  top: 75%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.home a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.services:hover .submenu {
+  display: block;
+}
+
+.sub-item {
+  @apply border border-neutral-100 bg-neutral-100 rounded-md hover:border-[#6eb43f] hover:bg-neutral-200;
+}
+
+.sub-link {
+  @apply flex items-center gap-3 p-3;
+}
+
+.sub-item:hover .sub-link i{
+  color: #6eb43f;
+}
