@@ -3,10 +3,13 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div className="nav-wrapper border w-screen ">
+    <div className="nav-wrapper w-full sticky top-0 z-50 bg-[#e9e6d4]">
       <div className="nav flex gap-10 container mx-auto px-6 h-14 items-center relative">
         <div className="nav-logo">
-          <a href="#" className="font-semibold text-[#6eb43f] capitalize tracking-wide ">
+          <a
+            href="#"
+            className="font-semibold text-[#6eb43f] capitalize tracking-wide "
+          >
             Safepoint Limited
           </a>
         </div>
@@ -22,12 +25,15 @@ export default function Navbar() {
             </li>
 
             <li className=" services relative h-14 flex items-center ">
-              <a className=" flex items-center gap-2 font-semibold text-sm tracking-wide" href="#">
+              <a
+                className=" flex items-center gap-2 font-semibold text-sm tracking-wide"
+                href="#"
+              >
                 Our Services
                 <i className="fa-solid fa-chevron-down"></i>
               </a>
 
-              <div className="submenu absolute top-[100%] w-[500px] -left-56 border p-3 hidden animate__animated animate__fadeIn bg-white">
+              <div className="submenu absolute top-[100%] w-[500px] -left-56 border p-3 hidden animate__animated animate__fadeIn bg-[#e9e6d4] z-50">
                 <ul className="grid grid-cols-2 gap-4 ">
                   <li className="sub-item">
                     <a href="#" className="sub-link">
@@ -112,13 +118,13 @@ export default function Navbar() {
           >
             <ul className="grid md:grid-cols-2 gap-4 ">
               <li className=" sub-item h-14 flex items-center hover:text-[#6eb43f] ">
-                <a href="#" className='sub-link'>
+                <a href="#" className="sub-link">
                   <i className=" fa-solid fa-house"></i>
                   Home
                 </a>
               </li>
               <li className="sub-item ">
-                <a href="#"className='sub-link'>
+                <a href="#" className="sub-link">
                   <i className=" fa-solid fa-users"></i>
                   About Us
                 </a>
