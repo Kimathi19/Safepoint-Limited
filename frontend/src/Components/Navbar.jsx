@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../Pages/Assets/Safepoint logo.png"
 
 
 export default function Navbar() {
@@ -8,8 +9,9 @@ export default function Navbar() {
         <div className="nav-logo">
           <a
             href="#"
-            className="font-semibold text-[#6eb43f] capitalize tracking-wide "
+            className="font-bold gap-2 flex items-center   text-[#3f95ae] capitalize tracking-wide "
           >
+            <img className="w-8 md:w-10 " src={logo} alt="" />
             Safepoint Limited
           </a>
         </div>
@@ -93,10 +95,10 @@ export default function Navbar() {
         </div>
 
         <div className="nav-buttons ml-auto hidden md:flex gap-5 ">
-          <button className="contact border py-1.5 px-4 rounded-md text-white bg-[#6eb43f] hover:bg-[#00303c]  hover:text-white">
+          <button className="contact border py-1.5 px-4 rounded-md text-white bg-[#6eb43f] hover:bg-[#33334e]  hover:text-white">
             Contact
           </button>
-          <button className="order border py-1.5 px-4  bg-[#00303c] text-white rounded-md hover:bg-[#6eb43f]">
+          <button className="order border py-1.5 px-4  bg-[#33334e] text-white rounded-md hover:bg-[#6eb43f]">
             Make Your Order
           </button>
         </div>
