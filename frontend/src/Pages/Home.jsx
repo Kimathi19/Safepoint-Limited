@@ -6,6 +6,9 @@ import image3 from "./Assets/image1-9.png";
 import image4 from "./Assets/side-view-employee-with-safety-e.png";
 import image5 from "./Assets/What-Every-Stakeholders-Can-Do-t.png";
 import image6 from "./Assets/1708175015686-removebg-preview.png";
+import safety from "./Assets/worker-health-safety-illustratio-removebg-preview.png";
+import tailoring from "./Assets/rb_8636.png";
+import projects from "./Assets/builders-on-the-construction-sit-removebg-preview.png";
 
 export default function Home() {
 
@@ -89,7 +92,63 @@ export default function Home() {
           </div>
         </div>
         <div className="vector ">
-          <img className="h-full w-full object-fill" src={image6} alt="Personal protective equipment PPE" />
+          <img
+            className="h-full w-full object-fill"
+            src={image6}
+            alt="Personal protective equipment PPE"
+          />
+        </div>
+      </div>
+      <div className="discover container mx-auto px-6 mb-10 min-h-[400px] ">
+        <div className="comprehensive flex justify-evenly border border-blue-700 w-[60%]">
+          <h3 className="text-2xl font-bold text-center">
+            Discover Our Comprehensive Construction Services Tailored for Your
+            Needs
+          </h3>
+        </div>
+        <div className="cards grid grid-cols-3 gap-6">
+          <div className="safety flex flex-col border border-blue-700">
+            <img
+              className="w-60 h-60 object-cover rounded-lg items-center  "
+              src={safety}
+              alt=""
+            />
+            <h5 className="my-3 text-lg font-bold text-[#3f95ae]">
+              High-Quality Safety Gear for a Secure Work Environment
+            </h5>
+            <p className="text-[#33334e]">
+              We provide top-notch safety gear designed to protect workers
+              on-site.
+            </p>
+          </div>
+          <div className="tailoring">
+            <img
+              className="w-60 h-60 object-fill rounded-lg"
+              src={tailoring}
+              alt=""
+            />
+            <h5 className="my-3 text-lg font-bold text-[#3f95ae]">
+              Custom Work Apparel Tailored for Comfort and Durability
+            </h5>
+            <p>
+              Our tailored work apparel ensures your team looks professional and
+              feels comfortable.
+            </p>
+          </div>
+          <div className="projects">
+            <img
+              className="w-60 h-60 object-fill rounded-lg"
+              src={projects}
+              alt=""
+            />
+            <h5 className="my-3 text-lg font-bold text-[#3f95ae]">
+              Expert Contracting Services for Your Construction Projects
+            </h5>
+            <p>
+              Our experienced team is ready to handle your contracting needs
+              efficiently.
+            </p>
+          </div>
         </div>
       </div>
     </>
