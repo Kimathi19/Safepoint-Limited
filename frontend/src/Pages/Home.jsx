@@ -99,7 +99,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="discover container mx-auto px-6 mb-10 min-h-[400px] ">
+      <div className="discover container mx-auto px-6 mb-10 min-h-[400px]  ">
         <div className="comprehensive flex justify-evenly ">
           <h3 className="text-2xl font-bold text-center">
             Discover Our Comprehensive Construction Services Tailored for Your

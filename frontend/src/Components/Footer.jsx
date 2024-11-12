@@ -2,7 +2,7 @@ import logo from "../Pages/Assets/Safepoint logo.png";
 
 export default function Footer() {
   return (
-    <div className="footer w-full absolute botttom-0  text pt-8 px-6">
+    <div className="footer w-full container mx-auto text pt-8 px-6 border border-black">
       <div className="newsletter flex flex-col items-center justify-center px-4">
         <h3 className="font-bold text-center">
           Subscribe for the latest products and offers
@@ -24,83 +24,93 @@ export default function Footer() {
           </button>
         </span>
       </div>
-      <hr className="my-4 mx-4 lg:mx-20 border-neutral-700" />
+      <hr className="my-4 px-4 lg:px-4 border-neutral-700" />
 
-      <div className="quicklinks gap-8">
+      <div className="quicklinks flex flex-wrap lg:flex-nowrap justify-between gap-8">
         <div className="socials">
-          <div className="limited font-bold gap-2 flex items-center   text-[#3f95ae] capitalize tracking-wide">
+          <div className="limited font-bold gap-2 flex items-center mb-2 text-[#3f95ae] capitalize tracking-wide">
             <img className="w-8 md:w-10 " src={logo} alt="" />
             <h3>Safepoint Limited</h3>
           </div>
-          <p>
+
+          <p className=" mb-4 max-w-[48ch]">
             Safepoint Limited manufactures a wide variety of protective wear for
             farm, industry and service center workers; and supplies a wide range
             of quality personal protective equipments (PPE).
           </p>
-          <p>Reach us on social media</p>
-          <hr />
-          <div className="icons flex gap-4">
+
+          <p className="text-center text-sm">Reach us on social media</p>
+
+          <hr className="border-black my-2" />
+
+          <div className="icons flex items-center justify-center gap-4">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-x-twitter"></i>
           </div>
         </div>
-        <div className="links">
-          <h2 className="font-bold text-center">Products</h2>
-          <p>
-            {" "}
-            <a href="">Body Protection</a>
-          </p>
-          <p>
-            {" "}
-            <a href="">Chemical Protection </a>
-          </p>
-          <p>
-            {" "}
-            <a href="">Eye Protection </a>
-          </p>
-          <p>
-            {" "}
-            <a href="">Head Protection </a>
-          </p>
-          <p>
-            {" "}
-            <a href="">Hand Protection </a>
-          </p>
-          <p>
-            {" "}
-            <a href="">Foot Protection </a>
-          </p>
+
+        <div className="links space-y-4">
+          <h2 className="font-bold tracking-wide">Products</h2>
+          <section className="flex flex-col gap-2">
+            <a href="#" className="">
+              Body Protection
+            </a>
+            <a href="#" className="">
+              Eye Protection
+            </a>
+            <a href="#" className="">
+              Chemical Protection
+            </a>
+            <a href="#" className="">
+              Head Protection
+            </a>
+            <a href="#" className="">
+              Hand Protection
+            </a>
+            <a href="#" className="">
+              Foot Protection
+            </a>
+          </section>
         </div>
-        <div className="office">
-          <h2 className="font-bold text-center">Office Information</h2>
-          <div className="footer-icons">
-            <i className="fa-solid fa-location-dot"></i>
-            <p>Office location</p>
-          </div>
-          <p>Industrial Area, Nairobi</p>
-          <p>Commercial ST after Unga Ltd</p>
-          <p>Yogi Corp, 3rd Floor Room 3A</p>
-          <div className="footer-icons">
-            <i className="fa-solid fa-phone"></i>
-            <p>Office contact</p>
-          </div>
-          <p>(+254)-728-218-144</p>
-        </div>
-        <div className="hours">
-          <div className="footer-icons">
-            <i class="fa-solid fa-hourglass-start"></i>
-            <p>Operating hours</p>
-          </div>
-          <p>Monday to Friday</p>
-          <p>8:00 am - 5:00 pm</p>
-          <p>Saturday</p>
-          <p>9:00 am - 1:00 pm</p>
-          <p>Sundays and Public Holidays</p>
-          <p>Closed</p>
+
+        <div className="office flex flex-col md:items-center md:self-center gap-4">
+          <h2 className="font-bold tracking-wide md:text-center">Office Information</h2>
+
+          <section className="flex flex-wrap md:flex-nowrap  gap-8">
+            <div className="w-full">
+              <div className="footer-icons">
+                <i className="fa-solid fa-location-dot"></i>
+                <p>Office location</p>
+              </div>
+              <p>Industrial Area, Nairobi</p>
+              <p>Commercial ST after Unga Ltd</p>
+              <p>Yogi Corp, 3rd Floor Room 3A</p>
+              <div className="footer-icons">
+                <i className="fa-solid fa-phone"></i>
+                <p>Office contact</p>
+              </div>
+              <p>(+254)-728-218-144</p>
+            </div>
+
+            <div className="hours w-full">
+              <div className="footer-icons">
+                <i class="fa-solid fa-hourglass-start"></i>
+                <p>Operating hours</p>
+              </div>
+              <p>Monday to Friday</p>
+              <p>8:00 am - 5:00 pm</p>
+              <p>Saturday</p>
+              <p>9:00 am - 1:00 pm</p>
+              <p>Sundays and Public Holidays</p>
+              <p>Closed</p>
+            </div>
+          </section>
         </div>
       </div>
-      <hr className="my-4 px-4 lg:mx-20 border-neutral-700" />
+
+
+      <hr className="my-2 px-4 lg:px-4 border-neutral-700" />
       <div className="anchor mb-2 flex flex-col items-center justify-between lg:flex-row px-4 lg:px-20">
         <p className="text-sm font-semibold">
           Copyright &copy; 2024 . Safepoint Limited
@@ -115,3 +125,18 @@ export default function Footer() {
     </div>
   );
 }
+
+
+/*
+ <div className="quicklinks flex md:flex-wrap lg:flex-nowrap gap-8">
+        
+
+       
+
+        <div className="w-[45%] office flex border border-black">
+          
+
+          
+        </div>
+      </div>
+*/
