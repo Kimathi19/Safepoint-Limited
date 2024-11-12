@@ -100,16 +100,16 @@ export default function Home() {
         </div>
       </div>
       <div className="discover container mx-auto px-6 mb-10 min-h-[400px] ">
-        <div className="comprehensive flex justify-evenly border border-blue-700 w-[60%]">
+        <div className="comprehensive flex justify-evenly ">
           <h3 className="text-2xl font-bold text-center">
             Discover Our Comprehensive Construction Services Tailored for Your
             Needs
           </h3>
         </div>
         <div className="cards grid grid-cols-3 gap-6">
-          <div className="safety flex flex-col border border-blue-700">
+          <div className="safety flex flex-col ">
             <img
-              className="w-60 h-60 object-cover rounded-lg items-center  "
+              className="w-60 h-60 object-fill rounded-lg items-center  "
               src={safety}
               alt=""
             />
