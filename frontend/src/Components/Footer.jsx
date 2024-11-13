@@ -2,7 +2,7 @@ import logo from "../Pages/Assets/Safepoint logo.png";
 
 export default function Footer() {
   return (
-    <div className="footer w-full container mx-auto text pt-8 px-6 ">
+    <div className="footer w-full container mx-auto text pt-8 px-6 mt-20 ">
       <div className="newsletter flex flex-col items-center justify-center px-4">
         <h3 className="font-bold text-center">
           Subscribe for the latest products and offers
@@ -39,11 +39,11 @@ export default function Footer() {
             of quality personal protective equipments (PPE).
           </p>
 
-          <p className="text-center text-sm">Reach us on social media</p>
+          {/* <p className="text-center text-sm">Reach us on social media</p> */}
 
-          <hr className="border-black my-2" />
+          <hr className="border-neutral-400 mb-4 mt-8" />
 
-          <div className="icons flex items-center justify-center gap-4">
+          <div className="icons flex   gap-4">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-x-twitter"></i>

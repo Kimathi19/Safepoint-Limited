@@ -4,7 +4,7 @@ import logo from "../Pages/Assets/Safepoint logo.png"
 
 export default function Navbar() {
   return (
-    <div className="nav-wrapper w-full sticky top-0 z-50 bg-[#e9e6d4]">
+    <div className="nav-wrapper w-full sticky top-0 z-50 bg-[#e9e6d4] border-b border-neutral-300 ">
       <div className="nav flex gap-10 container mx-auto px-6 h-14 items-center relative">
         <div className="nav-logo">
           <a

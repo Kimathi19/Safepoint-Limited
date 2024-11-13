@@ -46,17 +46,19 @@ const products = [
 
 const Products = () => {
   return (
-    <div className="products-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto p-4">
+    <div className="products-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto p-4 ">
       {products.map((product) => (
         <div
           key={product.id}
-          className="card flex items-center p-4 w-full max-w-[550px] mx-auto rounded-lg shadow-md "
+          className="card flex items-center p-4 w-full max-w-[550px] mx-auto rounded-lg shadow-md bg-neutral-100 gap-1 transition-all"
         >
+            <div className="photo overflow-hidden">
           <img
             src={product.src}
             alt={`${product.title}`}
-            className="w-[100px] h-[100px] object-cover rounded-md mr-4"
+            className="w-[100px] h-[100px] object-cover rounded-md mr-4 hover:scale-110"
           />
+          </div>
           <div className="content flex flex-col justify-center ">
             <h2 className="title font-bold text-xl text-gray-800">
               {product.title}
@@ -64,7 +66,7 @@ const Products = () => {
             <p className="description text-gray-600 text-sm mt-1">
               {product.description}
             </p>
-            <button className="view-button mt-2 px-4 py-2 bg-white text-gray-800 rounded-md shadow hover:bg-[#33334e] hover:text-white">
+            <button className="view-button mt-2 px-4 py-2 bg-neutral-300 text-gray-800 rounded-md shadow hover:bg-[#33334e] hover:text-white active:translate-y-[2px] transition-colors ">
               View Items <span>➔</span>
             </button>
           </div>

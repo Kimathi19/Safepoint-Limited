@@ -1,5 +1,5 @@
 import React, { useState , useEffect} from "react";
-import Navbar from "../Components/Navbar";
+// import Navbar from "../Components/Navbar";
 import image1 from "./Assets/0132_637341440984124282.png";
 import image2 from "./Assets/construction-safety-observation.png";
 import image3 from "./Assets/image1-9.png";
@@ -9,6 +9,7 @@ import image6 from "./Assets/1708175015686-removebg-preview.png";
 import safety from "./Assets/worker-health-safety-illustratio-removebg-preview.png";
 import tailoring from "./Assets/rb_8636.png";
 import projects from "./Assets/builders-on-the-construction-sit-removebg-preview.png";
+import Products from "../Components/Products";
 
 export default function Home() {
 
@@ -109,7 +110,7 @@ export default function Home() {
         <div className="cards grid grid-cols-3 gap-6">
           <div className="safety flex flex-col ">
             <img
-              className="w-60 h-60 object-fill rounded-lg items-center  "
+              className="size-60 object-fill rounded-lg items-center  "
               src={safety}
               alt=""
             />
@@ -151,6 +152,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="products px-6 mt-24">
+        <h1 className="text-lg font-bold tracking-wide ">Our Products</h1>
+        <Products/>
+      </div>
+      
     </>
   );
 }

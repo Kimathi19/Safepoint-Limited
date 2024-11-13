@@ -10,7 +10,8 @@ function App() {
     <div>
       <Navbar/>
       <Home />
-      <Products/>
+      
+    
       <Footer/>
     </div>
   )
