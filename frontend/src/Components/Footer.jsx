@@ -2,7 +2,7 @@ import logo from "../Pages/Assets/Safepoint logo.png";
 
 export default function Footer() {
   return (
-    <div className="footer w-full container mx-auto text pt-8 px-6 border border-black">
+    <div className="footer w-full container mx-auto text pt-8 px-6 ">
       <div className="newsletter flex flex-col items-center justify-center px-4">
         <h3 className="font-bold text-center">
           Subscribe for the latest products and offers
@@ -53,50 +53,52 @@ export default function Footer() {
         <div className="links space-y-4">
           <h2 className="font-bold tracking-wide">Products</h2>
           <section className="flex flex-col gap-2">
-            <a href="#" className="">
+            <a href="#" className="hover:text-[#6eb43f]">
               Body Protection
             </a>
-            <a href="#" className="">
+            <a href="#" className="hover:text-[#6eb43f]">
               Eye Protection
             </a>
-            <a href="#" className="">
+            <a href="#" className="hover:text-[#6eb43f]">
               Chemical Protection
             </a>
-            <a href="#" className="">
+            <a href="#" className="hover:text-[#6eb43f]">
               Head Protection
             </a>
-            <a href="#" className="">
+            <a href="#" className="hover:text-[#6eb43f]">
               Hand Protection
             </a>
-            <a href="#" className="">
+            <a href="#" className="hover:text-[#6eb43f]">
               Foot Protection
             </a>
           </section>
         </div>
 
         <div className="office flex flex-col md:items-center md:self-center gap-4">
-          <h2 className="font-bold tracking-wide md:text-center">Office Information</h2>
+          <h2 className="font-bold tracking-wide md:text-center">
+            Office Information
+          </h2>
 
           <section className="flex flex-wrap md:flex-nowrap  gap-8">
             <div className="w-full">
-              <div className="footer-icons">
+              <div className="footer-icons mb-2">
                 <i className="fa-solid fa-location-dot"></i>
-                <p>Office location</p>
+                <p className="font-semibold">Office location</p>
               </div>
               <p>Industrial Area, Nairobi</p>
               <p>Commercial ST after Unga Ltd</p>
               <p>Yogi Corp, 3rd Floor Room 3A</p>
-              <div className="footer-icons">
+              <div className="footer-icons my-2">
                 <i className="fa-solid fa-phone"></i>
-                <p>Office contact</p>
+                <p className="font-semibold">Office contact</p>
               </div>
               <p>(+254)-728-218-144</p>
             </div>
 
             <div className="hours w-full">
-              <div className="footer-icons">
+              <div className="footer-icons mb-2">
                 <i class="fa-solid fa-hourglass-start"></i>
-                <p>Operating hours</p>
+                <p className="font-semibold">Operating hours</p>
               </div>
               <p>Monday to Friday</p>
               <p>8:00 am - 5:00 pm</p>
@@ -109,9 +111,8 @@ export default function Footer() {
         </div>
       </div>
 
-
       <hr className="my-2 px-4 lg:px-4 border-neutral-700" />
-      <div className="anchor mb-2 flex flex-col items-center justify-between lg:flex-row px-4 lg:px-20">
+      <div className="anchor mb-2 flex flex-col items-center justify-between lg:flex-row px-4 lg:px-6">
         <p className="text-sm font-semibold">
           Copyright &copy; 2024 . Safepoint Limited
         </p>
