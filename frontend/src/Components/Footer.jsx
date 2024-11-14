@@ -44,9 +44,15 @@ export default function Footer() {
           <hr className="border-neutral-400 mb-4 mt-8" />
 
           <div className="icons flex   gap-4">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-x-twitter"></i>
+            <a href="https://www.instagram.com/safe_point_/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://web.facebook.com/Safepointltdke/">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://x.com/SAFEPOINTLTD1">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
           </div>
         </div>
 
