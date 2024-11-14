@@ -11,6 +11,7 @@ import tailoring from "./Assets/rb_8636.png";
 import projects from "./Assets/builders-on-the-construction-sit-removebg-preview.png";
 import Products from "../Components/Products";
 import Team from "../Components/Team";
+import Accordion from "../Components/Accordion";
 
 export default function Home() {
 
@@ -169,7 +170,29 @@ export default function Home() {
         <h1 className="text-2xl font-bold underline underline-offset-4">
           Meet the Professionals behind SafePoint
         </h1>
-        <Team/>
+        <Team />
+        <div className="open flex flex-col items-center justify-center text-center space-y-2">
+          <h1 className="text-sm text-black tracking-wider font-bold">
+            Open Positions
+          </h1>
+          <p className="text-gray-600">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          <button className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 ">
+            Open Positions
+          </button>
+        </div>
+      </div>
+      <div className="accordion">
+        <Accordion />
+        <div className="open flex flex-col items-center justify-center text-center space-y-2">
+          <h1 className="text-2xl font-semibold mt-8 text-black tracking-wider">
+            Still Have Questions?
+          </h1>
+          <button className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 ">
+            Contact Us
+          </button>
+        </div>
       </div>
     </>
   );

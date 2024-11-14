@@ -83,14 +83,14 @@ export default function Footer() {
             <div className="w-full">
               <div className="footer-icons mb-2">
                 <i className="fa-solid fa-location-dot"></i>
-                <p className="font-semibold">Office location</p>
+                <p className="font-semibold">Office Location</p>
               </div>
               <p>Industrial Area, Nairobi</p>
               <p>Commercial ST after Unga Ltd</p>
               <p>Yogi Corp, 3rd Floor Room 3A</p>
               <div className="footer-icons my-2">
                 <i className="fa-solid fa-phone"></i>
-                <p className="font-semibold">Office contact</p>
+                <p className="font-semibold">Office Contact</p>
               </div>
               <p>(+254)-728-218-144</p>
             </div>
@@ -98,12 +98,12 @@ export default function Footer() {
             <div className="hours w-full">
               <div className="footer-icons mb-2">
                 <i class="fa-solid fa-hourglass-start"></i>
-                <p className="font-semibold">Operating hours</p>
+                <p className="font-semibold">Operating Hours</p>
               </div>
               <p>Monday to Friday</p>
-              <p>8:00 am - 5:00 pm</p>
+              <p className="mb-2">8:00 am - 5:00 pm</p>
               <p>Saturday</p>
-              <p>9:00 am - 1:00 pm</p>
+              <p className="mb-2">9:00 am - 1:00 pm</p>
               <p>Sundays and Public Holidays</p>
               <p>Closed</p>
             </div>
