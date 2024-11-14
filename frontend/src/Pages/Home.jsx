@@ -10,6 +10,7 @@ import safety from "./Assets/worker-health-safety-illustratio-removebg-preview.p
 import tailoring from "./Assets/rb_8636.png";
 import projects from "./Assets/builders-on-the-construction-sit-removebg-preview.png";
 import Products from "../Components/Products";
+import Team from "../Components/Team";
 
 export default function Home() {
 
@@ -152,11 +153,24 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="products px-6 mt-24">
-        <h1 className="text-lg font-bold tracking-wide ">Our Products</h1>
-        <Products/>
+      <div className="products px-8 mt-24">
+        <h3 className="text-teal-500 text-xs tracking wider font-bold">
+          Shop With Us
+        </h3>
+        <h1 className="text-2xl font-bold underline underline-offset-4">
+          Featured Products
+        </h1>
+        <Products />
       </div>
-      
+      <div className="team mt-24 px-8">
+        <h3 className="text-xs text-teal-500 tracking-wider font-bold">
+          Our Team
+        </h3>
+        <h1 className="text-2xl font-bold underline underline-offset-4">
+          Meet the Professionals behind SafePoint
+        </h1>
+        <Team/>
+      </div>
     </>
   );
 }
