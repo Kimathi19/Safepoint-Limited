@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 // import Team from './Components/Team'
 import ErrorPage from './Pages/ErrorPage'
 import BodyProtection from './Pages/BodyProtection'
+import EyeProtection from './Pages/EyeProtection'
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Home />
       {/* <ErrorPage/> */}
       {/* <BodyProtection/> */}
+      {/* <EyeProtection/> */}
       <Footer/>
     </div>
   )
