@@ -12,6 +12,11 @@ import projects from "./Assets/builders-on-the-construction-sit-removebg-preview
 import Products from "../Components/Products";
 import Team from "../Components/Team";
 import Accordion from "../Components/Accordion";
+import KDF from "./Assets/KDF.png";
+import KFS from "./Assets/KFS.png";
+import redcross from "./Assets/Redcross.png";
+import NYS from "./Assets/NYS.png";
+import wellsfargo from "./Assets/Wells-Fargo.png";
 
 export default function Home() {
 
@@ -154,7 +159,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="products px-8 mt-24">
+      {/* Products */}
+      <div className="products container mx-auto px-6 mt-24">
         <h3 className="text-teal-500 text-xs tracking wider font-bold">
           Shop With Us
         </h3>
@@ -163,7 +169,8 @@ export default function Home() {
         </h1>
         <Products />
       </div>
-      <div className="team mt-24 px-8">
+      {/* Team */}
+      <div className="team container mx-auto mt-24 px-6">
         <h3 className="text-xs text-teal-500 tracking-wider font-bold">
           Our Team
         </h3>
@@ -183,7 +190,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="accordion">
+      <div className="accordion container mx-auto">
         <Accordion />
         <div className="open flex flex-col items-center justify-center text-center space-y-2">
           <h1 className="text-2xl font-semibold mt-8 text-black tracking-wider">
@@ -192,6 +199,44 @@ export default function Home() {
           <button className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 ">
             Contact Us
           </button>
+        </div>
+      </div>
+      {/* Our partners */}
+      <div className="partners container mx-auto">
+        <p className="text-xs text-teal-500 tracking-wider font-bold  text-center mt-24">
+          OUR PARTNERS
+        </p>
+        <h3 className="text-2xl font-bold text-center underline underline-offset-8">
+          Only Recognized By the Best
+        </h3>
+        <div className="partners-wrapper my-4 mt-8">
+          <div className="scroll-content flex items-center w-full justify-evenly  flex-wrap">
+            <img
+              src={KDF}
+              alt="Kenya-defence-forces-safepoint"
+              className="size-36 object-cover "
+            />
+            <img
+              src={NYS}
+              alt="NYS-safepoint"
+              className="size-36 object-cover "
+            />
+            <img
+              src={redcross}
+              alt="redcross-safepoint-partner"
+              className="size-36 object-cover "
+            />
+            <img
+              src={KFS}
+              alt="Kenya-forest-service-safepoint-partner"
+              className="size-36 object-fill "
+            />
+            <img
+              src={wellsfargo}
+              alt="wellsfargo-safepoint-partner"
+              className="size-36 object-fill "
+            />
+          </div>
         </div>
       </div>
     </>
