@@ -1,44 +1,34 @@
-import React from "react";
-import Motorbikecoverall from "./Assets/Motorbike Polycotton Coverall(Blue).png";
-import PolycottonCoverall from "./Assets/PolyCotton Coverall (Red).png";
-import WorkwearCoverall from "./Assets/Workwear coveralls.png";
+import onefilter from "./Assets/One filter mask.png";
+import twofilter from "./Assets/Two filter mask.png";
 
-//  body protection products
-const bodyProtectionProducts = [
+const chemicalProtectionProducts = [
   {
     id: 1,
-    image: Motorbikecoverall,
-    name: "Motorbike Polycotton Coverall (Blue)",
+    image: onefilter,
+    name: "One filter Chemical Mask",
     description:
-      "Flame resistant material, comes with a fitted jacket and pants. It has padding, providing the insulation against shock or fall-induced trauma.",
+      "Designed specifically to fit the face with comfort in mind and extremely lightweight. Easy maintenance & cleaning without tools. Body made of soft, TPE material which is gentle on the skin.",
   },
   {
     id: 2,
-    image: PolycottonCoverall,
-    name: "Polycotton Coverall (Red)",
+    image: twofilter,
+    name: "Two filter Chemical Mask",
     description:
-      "Reflective tape full configuration. Elasticated waist zip, front-fastening pockets.",
-  },
-  {
-    id: 3,
-    image: WorkwearCoverall,
-    name: "Workwear Coveralls",
-    description:
-      "Designed for general engineering, warehouse and automotive use this stud front boiler suit provides protection from oils, greases and solvents.",
+      "Designed specifically to fit the face with comfort in mind and extremely lightweight. Easy maintenance & cleaning without tools. Body made of soft, TPE material which is gentle on the skin.",
   },
 ];
 
-const BodyProtection = () => {
+const ChemicalProtection = () => {
   return (
     <div className="body-protection-products container mx-auto px-6 py-4">
       <h3 className="text-teal-500 text-xs tracking wider font-bold mb-4">
         Shop With Us
       </h3>
       <h1 className="text-2xl font-bold underline underline-offset-4 mb-12">
-        Body Protection Products
+        Chemical Protection Products
       </h1>
       <div className="body-protection-wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-center items-center mx-auto p-4">
-        {bodyProtectionProducts.map((product) => (
+        {chemicalProtectionProducts.map((product) => (
           <div
             key={product.id}
             className="card p-4 w-full space-y-2 rounded-lg shadow-md text-center "
@@ -62,4 +52,4 @@ const BodyProtection = () => {
   );
 };
 
-export default BodyProtection;
+export default ChemicalProtection;
