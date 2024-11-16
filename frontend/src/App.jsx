@@ -8,6 +8,7 @@ import ErrorPage from './Pages/ErrorPage'
 import BodyProtection from './Pages/BodyProtection'
 import EyeProtection from './Pages/EyeProtection'
 import ChemicalProtection from './Pages/ChemicalProtection'
+import FootProtection from './Pages/FootProtection'
 
 
 
@@ -20,6 +21,7 @@ function App() {
       {/* <BodyProtection/> */}
       {/* <EyeProtection/> */}
       {/* <ChemicalProtection/> */}
+      {/* <FootProtection/> */}
       <Footer/>
     </div>
   )
