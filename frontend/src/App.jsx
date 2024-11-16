@@ -9,6 +9,7 @@ import BodyProtection from './Pages/BodyProtection'
 import EyeProtection from './Pages/EyeProtection'
 import ChemicalProtection from './Pages/ChemicalProtection'
 import FootProtection from './Pages/FootProtection'
+import HandProtection from './Pages/HandProtection'
 
 
 
@@ -22,6 +23,7 @@ function App() {
       {/* <EyeProtection/> */}
       {/* <ChemicalProtection/> */}
       {/* <FootProtection/> */}
+      {/* <HandProtection/> */}
       <Footer/>
     </div>
   )
