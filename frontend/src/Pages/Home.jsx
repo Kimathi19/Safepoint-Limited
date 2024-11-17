@@ -41,7 +41,9 @@ export default function Home() {
       <div className="hero relative container mx-auto px-6 h-[700px] min-h-[700px] flex items-center mt-4">
         <div className="left absolute w-[50%] py-9 my-auto text-white z-10 px-8 ">
           <h1 className="text-5xl font-bold tracking-wide">
-            Your Partner in Construction Safety Solutions
+            Your <span className="underline text-[#6eb43f]">Partner </span> in
+            Construction{" "}
+            <span className="underline text-[#6eb43f]">Safety</span> Solutions
           </h1>
           <p className="text-lg my-8">
             At Safe Point, we are dedicated to providing top-notch safety gear

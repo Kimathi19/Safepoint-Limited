@@ -47,7 +47,7 @@ body{
 }
 
 .sub-link {
-  @apply flex items-center gap-3 p-3;
+  @apply flex items-center gap-3 p-3 w-full;
 }
 
 .sub-item:hover .sub-link i{
