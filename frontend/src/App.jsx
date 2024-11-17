@@ -13,6 +13,7 @@ import HandProtection from './Pages/HandProtection'
 import HeadProtection from './Pages/HeadProtection'
 import Contact from './Pages/Contact'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Popover from './Components/Popover'
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="HandProtection" element={<HandProtection />} />
         <Route path="HeadProtection" element={<HeadProtection />} />
         <Route path="Contact" element={<Contact />} />
+        <Route path="Popover" element={<Popover />} />
       </Routes>
       <Footer />
     </BrowserRouter>

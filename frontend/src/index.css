@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
 body{
-  background-color: #e9e6d4;
+  /* background-color: #e9e6d4; */
+  background-color: aliceblue;
   min-height: 100dvh;
 }
 

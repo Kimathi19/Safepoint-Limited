@@ -6,8 +6,8 @@ import { Link, Outlet } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <div className="nav-wrapper w-full sticky top-0 z-50 bg-[#e9e6d4] border-b border-neutral-300 ">
-      <div className="nav flex gap-10 container mx-auto px-6 h-14 items-center relative">
+    <div className="nav-wrapper w-full sticky top-0 z-50 bg-[aliceblue]/90 backdrop-blur-lg border-b border-neutral-200 ">
+      <div className="nav flex gap-10 container mx-auto px-6 h-16 items-center relative">
         <div className="nav-logo">
           <Link
             to="/"
@@ -94,12 +94,12 @@ export default function Navbar() {
         </div>
 
         <div className="nav-buttons ml-auto hidden md:flex gap-5 ">
-          <Link to="/Contact" className="contact border py-1.5 px-4 rounded-md text-white bg-[#6eb43f] hover:bg-[#33334e]  hover:text-white">
+          <Link to="/Contact" className="contact border py-2 px-4 rounded-md text-white bg-[#6eb43f] hover:bg-[#33334e]  hover:text-white">
             Contact
           </Link>
-          <button className="order border py-1.5 px-4  bg-[#33334e] text-white rounded-md hover:bg-[#6eb43f]">
+          <Link to="/Popover" className="order border py-2 px-4  bg-[#33334e] text-white rounded-md hover:bg-[#6eb43f]">
             Make Your Order
-          </button>
+          </Link>
         </div>
 
         {/* Mobile navigation */}

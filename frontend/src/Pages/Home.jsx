@@ -1,14 +1,6 @@
 import React, { useState , useEffect} from "react";
+import { expert, icon,image1,image2,image3,image4,image5,image6, tailor } from "./Assets/images";
 // import Navbar from "../Components/Navbar";
-import image1 from "./Assets/0132_637341440984124282.png";
-import image2 from "./Assets/construction-safety-observation.png";
-import image3 from "./Assets/image1-9.png";
-import image4 from "./Assets/side-view-employee-with-safety-e.png";
-import image5 from "./Assets/What-Every-Stakeholders-Can-Do-t.png";
-import image6 from "./Assets/1708175015686-removebg-preview.png";
-import safety from "./Assets/worker-health-safety-illustratio-removebg-preview.png";
-import tailoring from "./Assets/rb_8636.png";
-import projects from "./Assets/builders-on-the-construction-sit-removebg-preview.png";
 import Products from "../Components/Products";
 import Team from "../Components/Team";
 import Accordion from "../Components/Accordion";
@@ -38,20 +30,20 @@ export default function Home() {
 
   return (
     <>
-      <div className="hero relative container mx-auto px-6 h-[700px] min-h-[700px] flex items-center mt-4">
-        <div className="left absolute w-[50%] py-9 my-auto text-white z-10 px-8 ">
-          <h1 className="text-5xl font-bold tracking-wide">
-            Your <span className="underline text-[#6eb43f]">Partner </span> in
-            Construction{" "}
+      <div className="hero relative container mx-auto h-[90vh] min-h-[90vh] lg:px-6 lg:h-[700px] lg:min-h-[700px] flex items-center lg:mt-4">
+        <div className="left absolute lg:w-[50%] my-auto text-white z-10 mx-8 left-0 md:left-4 lg:left-8 ">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-pretty">
+            Your <span className="underline text-[#6eb43f]">Partner</span> in
+            Construction &nbsp;
             <span className="underline text-[#6eb43f]">Safety</span> Solutions
           </h1>
-          <p className="text-lg my-8">
-            At Safe Point, we are dedicated to providing top-notch safety gear
+          <p className="md:text-lg my-8">
+            At Safe Point, we are dedicated to providing top - notch safety gear
             and work apparel tailored for the construction industry. Our mission
             is to ensure that every worker is equipped with the best protection
             and comfort on the job.
           </p>
-          <div className="buttons flex gap-4">
+          <div className="buttons flex flex-col sm:flex-row gap-4">
             <button className="border border-[#6eb43f] py-2 px-4 bg-[#6eb43f] text-white active:translate-y-1 hover:bg-[#6eb43f]/90">
               Learn More
             </button>
@@ -61,23 +53,25 @@ export default function Home() {
           </div>
         </div>
         <div className="swiper w-full h-full">
-          <div className="absolute inset-6 inset-y-0 bg-black opacity-50 rounded-lg"></div>
+          <div className="absolute inset-0 lg:inset-6 lg:inset-y-0 bg-black opacity-50 lg:rounded-lg"></div>
           <img
-            className="swiper-image w-full h-full object-cover rounded-lg"
+            className="swiper-image w-full h-full object-cover lg:rounded-lg"
             src={images[currentIndex]}
             alt={`Slide ${currentIndex}`}
           />
         </div>
       </div>
 
-      <div className="welcome grid grid-cols-2 gap-6 container mx-auto px-6 mt-10 mb-10  min-h-[500px]">
-        <div className="partner py-36">
+
+      {/* 2nd div */}
+      <div className="welcome grid lg:grid-cols-2 gap-6 container mx-auto px-6 my-24  min-h-[500px]">
+        <div className="partner flex flex-col justify-center">
           <div className="words">
-            <h1 className="text-3xl font-bold tracking-wide">
+            <h1 className="text-2xl md:text-3xl font-bold tracking-wide">
               Welcome to Safe Point: Your Partner in Construction Safety and
               Apparel Solutions
             </h1>
-            <p className="text-lg my-8">
+            <p className="md:text-lg my-8">
               At Safe Point, we specialize in providing top-quality safety gear
               and work apparel tailored for the construction industry. Our
               commitment to safety and quality ensures that your team is
@@ -86,85 +80,92 @@ export default function Home() {
           </div>
           <div className="checkers">
             <ul className="space-y-2">
-              <li className="text-[[#00303c]">
-                <i className="fa-solid fa-check mr-4 text-[#6eb43f] "></i>
-                High-quality safety gear for construction professionals
+              <li className="text-[[#00303c] flex md:items-center  ">
+                <i className="fa-solid fa-check mr-4 text-[#6eb43f]  h-full  "></i>
+                <span>
+                  High-quality safety gear for construction professionals
+                </span>
               </li>
-              <li>
+              <li className="flex md:items-center ">
                 <i className="fa-solid fa-check  mr-4 text-[#6eb43f]  "></i>
-                Custom tailored work apparel for every job
+                <span>Custom tailored work apparel for every job</span>
               </li>
-              <li>
+              <li className="flex md:items-center ">
                 <i className="fa-solid fa-check  mr-4 text-[#6eb43f]  "></i>
-                Dedicated to enhancing workplace safety and comfort
+                <span>Dedicated to enhancing workplace safety and comfort</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="vector ">
+        <div className="vector items-center flex justify-center">
           <img
-            className="h-full w-full object-fill"
+            className=" object-contain  "
             src={image6}
             alt="Personal protective equipment PPE"
           />
         </div>
       </div>
-      <div className="discover container mx-auto px-6 mb-10 min-h-[400px]  ">
-        <div className="comprehensive flex justify-evenly ">
-          <h3 className="text-2xl font-bold text-center">
+
+
+      {/* 3rd div */}
+      <div className="discover container mx-auto px-6 mb-10 min-h-[400px] flex flex-col justify-between bg-[#33334e] text-neutral-100 tracking-wide py-16 text-pretty lg:rounded-lg">
+        <div className="comprehensive flex justify-evenly mb-16">
+          <h3 className="text-2xl font-bold md:text-center">
             Discover Our Comprehensive Construction Services Tailored for Your
             Needs
           </h3>
         </div>
-        <div className="cards grid grid-cols-3 gap-6">
+        <div className="cards grid md:grid-cols-3  justify-between gap-16">
           <div className="safety flex flex-col ">
             <img
-              className="size-60 object-fill rounded-lg items-center  "
-              src={safety}
+              className="size-16 border  bg-neutral-100 p-2 object-fill rounded-lg items-center  "
+              src={icon}
               alt=""
             />
-            <h5 className="my-3 text-lg font-bold text-[#3f95ae]">
+            <h5 className="mt-4 mb-2 text-lg font-semibold text-[#3f95ae]">
               High-Quality Safety Gear for a Secure Work Environment
             </h5>
-            <p className="text-[#33334e]">
+            <p className="">
               We provide top-notch safety gear designed to protect workers
               on-site.
             </p>
           </div>
           <div className="tailoring">
             <img
-              className="w-60 h-60 object-fill rounded-lg"
-              src={tailoring}
+              className="size-16 bg-neutral-100 p-2 object-cover rounded-lg items-center"
+              src={tailor}
               alt=""
             />
-            <h5 className="my-3 text-lg font-bold text-[#3f95ae]">
+            <h5 className="mt-4 mb-2 text-lg font-semibold text-[#3f95ae]">
               Custom Work Apparel Tailored for Comfort and Durability
             </h5>
-            <p>
+            <p className="">
               Our tailored work apparel ensures your team looks professional and
               feels comfortable.
             </p>
           </div>
           <div className="projects">
             <img
-              className="w-60 h-60 object-fill rounded-lg"
-              src={projects}
+              className="size-16 bg-neutral-100 p-2 object-fill rounded-lg items-center"
+              src={expert}
               alt=""
             />
-            <h5 className="my-3 text-lg font-bold text-[#3f95ae]">
+            <h5 className="mt-4 mb-2 text-lg font-semibold text-[#3f95ae]">
               Expert Contracting Services for Your Construction Projects
             </h5>
-            <p>
+            <p className="">
               Our experienced team is ready to handle your contracting needs
               efficiently.
             </p>
           </div>
         </div>
       </div>
+      
+
       {/* Products */}
       <div className="products container mx-auto px-6 mt-24">
-        <h3 className="text-teal-500 text-xs tracking wider font-bold">
-          Shop With Us
+        <h3 className="text-teal-500 text-sm tracking-wide font-bold">
+          Shop with us
         </h3>
         <h1 className="text-2xl font-bold underline underline-offset-4">
           Featured Products

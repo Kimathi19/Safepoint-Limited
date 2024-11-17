@@ -29,28 +29,31 @@ const footProtectionProducts = [
 const FootProtection = () => {
   return (
     <div className="body-protection-products container mx-auto px-6 py-4">
-      <h3 className="text-teal-500 text-xs tracking wider font-bold mb-4">
+      <h3 className="text-[#3f95ae] text-sm tracking-wide font-semibold mb-2">
         Shop With Us
       </h3>
       <h1 className="text-2xl font-bold underline underline-offset-4 mb-12">
         Foot Protection Products
       </h1>
-      <div className="body-protection-wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-center items-center mx-auto p-4">
+      <div className="body-protection-wrapper grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3 gap-4 justify-center items-center mx-auto ">
         {footProtectionProducts.map((product) => (
           <div
             key={product.id}
-            className="card p-4 w-full space-y-2 rounded-lg shadow-md text-center "
+            className="card w-full rounded-lg shadow-md h-full flex flex-col justify-between gap-2 pb-4 overflow-hidden "
           >
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-48 object-contain rounded-md mx-auto"
+              className="w-full h-48 object-contain "
             />
-            <h1 className="name font-bold text-lg">{product.name}</h1>
-            <p className="description text-gray-600 text-sm">
-              {product.description}
-            </p>
-            <button className="view-button mt-2 px-4 py-2 bg-neutral-300 text-gray-800 rounded-md shadow hover:bg-[#33334e] hover:text-white active:translate-y-[2px] transition-colors ">
+            <div className="caption p-4">
+              <h1 className="name font-bold text-lg">{product.name}</h1>
+              <p className="description text-gray-600 text-sm">
+                {product.description}
+              </p>
+            </div>
+
+            <button className="view-button px-4 py-2 mx-4 bg-[#3f95ae] rounded-md shadow hover:bg-[#33334e] text-white active:translate-y-[2px] transition-colors font-semibold tracking-wide">
               Make Order <span>➔</span>
             </button>
           </div>
