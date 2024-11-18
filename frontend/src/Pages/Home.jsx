@@ -1,14 +1,24 @@
 import React, { useState , useEffect} from "react";
-import { expert, icon,image1,image2,image3,image4,image5,image6, tailor } from "./Assets/images";
+import {
+  expert,
+  icon,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  tailor,
+  KDF,
+  KFS,
+  redcross,
+  NYS,
+  wellsfargo,
+} from "./Assets/images";
 // import Navbar from "../Components/Navbar";
 import Products from "../Components/Products";
 import Team from "../Components/Team";
 import Accordion from "../Components/Accordion";
-import KDF from "./Assets/KDF.png";
-import KFS from "./Assets/KFS.png";
-import redcross from "./Assets/Redcross.png";
-import NYS from "./Assets/NYS.png";
-import wellsfargo from "./Assets/Wells-Fargo.png";
 import { Link } from "react-router-dom";
 
 export default function Home() {

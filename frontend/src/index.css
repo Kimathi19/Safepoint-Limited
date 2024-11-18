@@ -28,10 +28,10 @@ body{
   content: "";
   position: absolute;
   height: 2px;
-  width: 100%;
+  width: 80%;
   background-color: #6eb43f;
-  top: 75%;
-  left: 0;
+  top: 70%;
+  left: 10%;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: right;

@@ -30,16 +30,16 @@ export default function Navbar() {
         </div>
 
         <div className="nav-links text-[#00303c] hidden lg:flex ">
-          <ul className="flex gap-12 ml-32 h-full items-center">
+          <ul className="flex ml-32 h-full items-center">
             <li className="home h-16 flex items-center hover:text-[#6eb43f] font-medium tracking-wide text-sm">
-              <Link to="/">Home</Link>
+              <Link to="/" className='h-full flex items-center px-4'>Home</Link>
             </li>
 
             <li className="home h-16 flex items-center hover:text-[#6eb43f] font-medium tracking-wide text-sm">
-              <Link to="/About">About Us</Link>
+              <Link to="/About" className='h-full flex items-center px-4'>About Us</Link>
             </li>
 
-            <li className=" services relative h-16 flex items-center ">
+            <li className=" services relative h-16 flex items-center px-4">
               <a className=" flex items-center gap-2 font-semibold text-sm tracking-wide cursor-pointer">
                 Our Services
                 <i className="fa-solid fa-chevron-down"></i>
@@ -107,13 +107,13 @@ export default function Navbar() {
         <div className="nav-buttons ml-auto hidden md:flex gap-5 ">
           <Link
             to="/Contact"
-            className="contact border py-2 px-4 rounded-md text-white bg-[#6eb43f] hover:bg-[#33334e]  hover:text-white"
+            className="contact border-2 py-2 px-4 rounded-md border-[#6eb43f] hover:bg-[#6eb43f] hover:text-white"
           >
             Contact
           </Link>
           <Link
             to="/Popover"
-            className="order border py-2 px-4  bg-[#33334e] text-white rounded-md hover:bg-[#6eb43f]"
+            className="order border py-2 px-4  bg-[#33334e] text-white rounded-md hover:bg-[#33334e]/90 transition-colors"
           >
             Make Your Order
           </Link>
