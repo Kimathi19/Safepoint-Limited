@@ -2,7 +2,7 @@ import logo from "../Pages/Assets/Safepoint logo.png";
 
 export default function Footer() {
   return (
-    <div className="footer w-full container mx-auto text pt-8 px-6 mt-20 ">
+    <div className="footer w-full container mx-auto text-sm pt-8 px-6 mt-20 ">
       <div className="newsletter flex flex-col items-center justify-center px-4">
         <h3 className="font-bold text-center">
           Subscribe for the latest products and offers
@@ -24,7 +24,7 @@ export default function Footer() {
           </button>
         </span>
       </div>
-      <hr className="my-4 px-4 lg:px-4 border-neutral-700" />
+      <hr className="my-4 px-4 lg:px-4 border-neutral-300" />
 
       <div className="quicklinks flex flex-wrap lg:flex-nowrap justify-between gap-8">
         <div className="socials">
@@ -39,11 +39,9 @@ export default function Footer() {
             of quality personal protective equipments (PPE).
           </p>
 
-          {/* <p className="text-center text-sm">Reach us on social media</p> */}
+          <hr className="border-neutral-300 mb-4 mt-8" />
 
-          <hr className="border-neutral-400 mb-4 mt-8" />
-
-          <div className="icons flex   gap-4">
+          <div className="icons flex gap-4">
             <a href="https://www.instagram.com/safe_point_/">
               <i class="fa-brands fa-instagram"></i>
             </a>
@@ -57,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="links space-y-4">
-          <h2 className="font-bold tracking-wide">Products</h2>
+          <h2 className="font-bold text-base tracking-wide">Products</h2>
           <section className="flex flex-col gap-2">
             <a href="#" className="hover:text-[#6eb43f]">
               Body Protection
@@ -81,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="office flex flex-col md:items-center md:self-center gap-4">
-          <h2 className="font-bold tracking-wide md:text-center">
+          <h2 className="font-bold tracking-wide md:text-center text-base">
             Office Information
           </h2>
 
@@ -117,7 +115,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <hr className="my-2 px-4 lg:px-4 border-neutral-700" />
+      <hr className="my-2 px-4 lg:px-4 border-neutral-300" />
       <div className="anchor mb-2 flex flex-col items-center justify-between lg:flex-row px-4 lg:px-6">
         <p className="text-sm font-semibold">
           Copyright &copy; 2024 . Safepoint Limited
@@ -133,17 +131,3 @@ export default function Footer() {
   );
 }
 
-
-/*
- <div className="quicklinks flex md:flex-wrap lg:flex-nowrap gap-8">
-        
-
-       
-
-        <div className="w-[45%] office flex border border-black">
-          
-
-          
-        </div>
-      </div>
-*/

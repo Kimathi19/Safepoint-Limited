@@ -47,7 +47,7 @@ body{
 }
 
 .sub-item {
-  @apply border border-neutral-100 bg-neutral-100 rounded-md hover:border-[#6eb43f] hover:bg-neutral-200;
+  @apply border border-neutral-200 bg-neutral-100 rounded-md hover:border-[#6eb43f];
 }
 
 .sub-link {

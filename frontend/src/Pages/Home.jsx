@@ -9,6 +9,7 @@ import KFS from "./Assets/KFS.png";
 import redcross from "./Assets/Redcross.png";
 import NYS from "./Assets/NYS.png";
 import wellsfargo from "./Assets/Wells-Fargo.png";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
@@ -62,7 +63,6 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* 2nd div */}
       <div className="welcome grid lg:grid-cols-2 gap-6 container mx-auto px-6 my-24  min-h-[500px]">
         <div className="partner flex flex-col justify-center">
@@ -105,7 +105,6 @@ export default function Home() {
           />
         </div>
       </div>
-
 
       {/* 3rd div */}
       <div className="discover container mx-auto px-6 mb-10 min-h-[400px] flex flex-col justify-between bg-[#33334e] text-neutral-100 tracking-wide py-16 text-pretty lg:rounded-lg">
@@ -160,7 +159,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
 
       {/* Products */}
       <div className="products container mx-auto px-6 mt-24">
@@ -177,31 +175,32 @@ export default function Home() {
         <h3 className="text-xs text-teal-500 tracking-wider font-bold">
           Our Team
         </h3>
-        <h1 className="text-2xl font-bold underline underline-offset-4">
+        <h1 className="text-2xl font-bold underline underline-offset-4 mb-4">
           Meet the Professionals behind SafePoint
         </h1>
         <Team />
-        <div className="open flex flex-col items-center justify-center text-center space-y-2">
+        <div className="open flex flex-col items-center justify-center text-center space-y-2 mt-8">
           <h1 className="text-sm text-black tracking-wider font-bold">
             Open Positions
           </h1>
           <p className="text-gray-600">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Explore exciting career opportunities with Safepoint - Apply now!
           </p>
-          <button className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 ">
+          <Link to="/Career" className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 rounded-md">
             Open Positions
-          </button>
+          </Link>
         </div>
       </div>
+      {/* Accordion */}
       <div className="accordion container mx-auto">
         <Accordion />
         <div className="open flex flex-col items-center justify-center text-center space-y-2">
           <h1 className="text-2xl font-semibold mt-8 text-black tracking-wider">
             Still Have Questions?
           </h1>
-          <button className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 ">
+          <Link to="/Contact" className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 ">
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
       {/* Our partners */}
