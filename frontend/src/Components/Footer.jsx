@@ -1,4 +1,5 @@
 import logo from "../Pages/Assets/Safepoint logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -57,24 +58,24 @@ export default function Footer() {
         <div className="links space-y-4">
           <h2 className="font-bold text-base tracking-wide">Products</h2>
           <section className="flex flex-col gap-2">
-            <a href="#" className="hover:text-[#6eb43f]">
+            <Link to="/BodyProtection"  className="hover:text-[#6eb43f]">
               Body Protection
-            </a>
-            <a href="#" className="hover:text-[#6eb43f]">
+            </Link>
+            <Link to="/EyeProtection" className="hover:text-[#6eb43f]">
               Eye Protection
-            </a>
-            <a href="#" className="hover:text-[#6eb43f]">
+            </Link>
+            <Link to="/ChemicalProtection" className="hover:text-[#6eb43f]">
               Chemical Protection
-            </a>
-            <a href="#" className="hover:text-[#6eb43f]">
+            </Link>
+            <Link to="/HeadProtection" className="hover:text-[#6eb43f]">
               Head Protection
-            </a>
-            <a href="#" className="hover:text-[#6eb43f]">
+            </Link>
+            <Link to="/HandProtection" className="hover:text-[#6eb43f]">
               Hand Protection
-            </a>
-            <a href="#" className="hover:text-[#6eb43f]">
+            </Link>
+            <Link to="/FootProtection" className="hover:text-[#6eb43f]">
               Foot Protection
-            </a>
+            </Link>
           </section>
         </div>
 

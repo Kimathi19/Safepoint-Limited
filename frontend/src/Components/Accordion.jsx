@@ -1,7 +1,7 @@
 export default function Accordion(){
     return (
       <div className="accordion flex flex-col justify-center items-center">
-        <h2 className="text-2xl mb-8 mt-24 underline underline-offset-8 font-bold text-center">
+        <h2 className="text-2xl mb-8 underline underline-offset-8 font-bold text-center">
           Frequently Asked Questions
         </h2>
         <div className="items w-[75%]">

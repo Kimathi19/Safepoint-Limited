@@ -20,6 +20,10 @@ import Products from "../Components/Products";
 import Team from "../Components/Team";
 import Accordion from "../Components/Accordion";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+AOS.init();
+
 
 export default function Home() {
 
@@ -41,8 +45,10 @@ export default function Home() {
 
   return (
     <>
-      <div className="hero relative container mx-auto h-[90vh] min-h-[90vh] lg:px-6 lg:h-[700px] lg:min-h-[700px] flex items-center lg:mt-4">
-        <div className="left absolute lg:w-[50%] my-auto text-white z-10 mx-8 left-0 md:left-4 lg:left-8 ">
+      <div className="hero relative container mx-auto h-[90vh] min-h-[90vh] xl:px-6 xl:h-[700px] xl:min-h-[700px] flex items-center xl:mt-4">
+        <div
+          className="left absolute lg:w-[50%] my-auto text-white z-10 mx-8 left-0 md:left-4 lg:left-8 "
+        >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-pretty">
             Your <span className="underline text-[#6eb43f]">Partner</span> in
             Construction &nbsp;
@@ -64,9 +70,9 @@ export default function Home() {
           </div>
         </div>
         <div className="swiper w-full h-full">
-          <div className="absolute inset-0 lg:inset-6 lg:inset-y-0 bg-black opacity-50 lg:rounded-lg"></div>
+          <div className="absolute inset-0 xl:inset-6 xl:inset-y-0 bg-black opacity-50 xl:rounded-lg"></div>
           <img
-            className="swiper-image w-full h-full object-cover lg:rounded-lg"
+            className="swiper-image w-full h-full object-cover xl:rounded-lg"
             src={images[currentIndex]}
             alt={`Slide ${currentIndex}`}
           />
@@ -117,7 +123,7 @@ export default function Home() {
       </div>
 
       {/* 3rd div */}
-      <div className="discover container mx-auto px-6 mb-10 min-h-[400px] flex flex-col justify-between bg-[#33334e] text-neutral-100 tracking-wide py-16 text-pretty lg:rounded-lg">
+      <div className="discover container mx-auto px-6 mb-10 min-h-[400px] flex flex-col justify-between bg-[#33334e] text-neutral-100 tracking-wide py-16 text-pretty 2xl:rounded-lg">
         <div className="comprehensive flex justify-evenly mb-16">
           <h3 className="text-2xl font-bold md:text-center">
             Discover Our Comprehensive Construction Services Tailored for Your
@@ -180,6 +186,7 @@ export default function Home() {
         </h1>
         <Products />
       </div>
+
       {/* Team */}
       <div className="team container mx-auto mt-24 px-6">
         <h3 className="text-xs text-teal-500 tracking-wider font-bold">
@@ -188,27 +195,37 @@ export default function Home() {
         <h1 className="text-2xl font-bold underline underline-offset-4 mb-4">
           Meet the Professionals behind SafePoint
         </h1>
+
         <Team />
-        <div className="open flex flex-col items-center justify-center text-center space-y-2 mt-8">
+
+        <div className="open flex flex-col items-center justify-center text-center space-y-2 my-28">
           <h1 className="text-sm text-black tracking-wider font-bold">
             Open Positions
           </h1>
           <p className="text-gray-600">
             Explore exciting career opportunities with Safepoint - Apply now!
           </p>
-          <Link to="/Career" className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 rounded-md">
+          <Link
+            to="/Career"
+            className="border border-[#33334e] py-2 px-8 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 rounded-md"
+          >
             Open Positions
           </Link>
         </div>
       </div>
+
       {/* Accordion */}
       <div className="accordion container mx-auto">
         <Accordion />
-        <div className="open flex flex-col items-center justify-center text-center space-y-2">
-          <h1 className="text-2xl font-semibold mt-8 text-black tracking-wider">
+
+        <div className="open flex flex-col items-center justify-center text-center space-y-4 my-20">
+          <h1 className="text-2xl font-semibold mt-8 text-black tracking-wide">
             Still Have Questions?
           </h1>
-          <Link to="/Contact" className="border border-[#33334e] py-2 px-4 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 ">
+          <Link
+            to="/Contact"
+            className="border border-[#33334e] rounded py-2 px-8 bg-[#33334e] text-white active:translate-y-1 hover:bg-[#33334e]/90 "
+          >
             Contact Us
           </Link>
         </div>

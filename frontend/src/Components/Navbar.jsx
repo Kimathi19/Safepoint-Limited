@@ -104,7 +104,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className="nav-buttons ml-auto hidden md:flex gap-5 ">
+        <div className="nav-buttons ml-auto hidden lg:flex gap-5 ">
           <Link
             to="/Contact"
             className="contact border-2 py-2 px-4 rounded-md border-[#6eb43f] hover:bg-[#6eb43f] hover:text-white"
@@ -120,7 +120,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile navigation */}
-        <div className="hamburger ml-auto md:ml-0 lg:hidden ">
+        <div className="hamburger ml-auto lg:hidden ">
           <button
             type="button"
             className="hamburger-button border py-1 px-3 rounded hover:bg-neutral-100 hover:border-neutral-200"
