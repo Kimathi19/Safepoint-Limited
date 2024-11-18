@@ -1,5 +1,6 @@
 import onefilter from "./Assets/One filter mask.png";
 import twofilter from "./Assets/Two filter mask.png";
+import { Link } from "react-router-dom";
 
 const chemicalProtectionProducts = [
   {
@@ -45,9 +46,9 @@ const ChemicalProtection = () => {
               </p>
             </div>
 
-            <button className="view-button px-4 py-2 mx-4 bg-[#3f95ae] rounded-md shadow hover:bg-[#33334e] text-white active:translate-y-[2px] transition-colors font-semibold tracking-wide">
+            <Link to="/Popover"  className="view-button px-4 py-2 mx-4 bg-[#3f95ae] rounded-md shadow hover:bg-[#33334e] text-white active:translate-y-[2px] transition-colors font-semibold tracking-wide">
               Make Order <span>➔</span>
-            </button>
+            </Link>
           </div>
         ))}
       </div>
