@@ -61,12 +61,12 @@ export default function Home() {
             and comfort on the job.
           </p>
           <div className="buttons flex flex-col sm:flex-row gap-4">
-            <button className="border border-[#6eb43f] py-2 px-4 bg-[#6eb43f] text-white active:translate-y-1 hover:bg-[#6eb43f]/90">
+            <Link to="/About" className="border border-[#6eb43f] py-2 px-4 bg-[#6eb43f] text-white active:translate-y-1 hover:bg-[#6eb43f]/90">
               Learn More
-            </button>
-            <button className="border-2 py-2 px-4 border-[#6eb43f] active:translate-y-1  ">
+            </Link>
+            <Link to="/Contact" className="border-2 py-2 px-4 border-[#6eb43f] active:translate-y-1  ">
               Make Order
-            </button>
+            </Link>
           </div>
         </div>
         <div className="swiper w-full h-full">
