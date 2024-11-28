@@ -8,7 +8,6 @@ export default function Accordion(){
           <details
             className="accordion-item px-4 py-3 md:px-8 bg-[#f2f4f7]"
             name="faq"
-            open
           >
             <summary className="text-[16px] md:text-[18px] font-semibold font-sans flex justify-between items-center">
               <span>What services do you offer?</span>
