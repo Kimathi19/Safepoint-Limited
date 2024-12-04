@@ -6,7 +6,8 @@ const Popover = () => {
       <div id="modal-dialog" className=" flex justify-center ">
         <form
           className=" m-4 shadow-lg  w-[90%] bg-white md:max-w-[30rem] rounded-md overflow-hidden"
-          action=""
+          action="getlikekimathi@gmail.com"
+          method='post'
         >
           <div className="heading flex items-center justify-center bg-[#3f95ae] text-white gap-4 py-2">
             <i className="fa-solid fa-cart-shopping animate-bounce"></i>

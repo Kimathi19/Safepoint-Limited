@@ -198,7 +198,7 @@ export default function Home() {
 
         <Team />
 
-        <div className="open flex flex-col items-center justify-center text-center space-y-2 my-28">
+        <div className="open flex flex-col items-center justify-center text-center space-y-2 mt-12 mb-28">
           <h1 className="text-sm text-black tracking-wider font-bold">
             Open Positions
           </h1>
