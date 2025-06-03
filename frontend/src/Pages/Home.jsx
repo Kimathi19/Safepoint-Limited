@@ -45,6 +45,7 @@ export default function Home() {
 
   return (
     <>
+    {/* Hero Section */}
       <div className="hero relative container mx-auto h-[90vh] min-h-[90vh] xl:px-6 xl:h-[700px] xl:min-h-[700px] flex items-center xl:mt-4">
         <div
           className="left absolute lg:w-[50%] my-auto text-white z-10 mx-8 left-0 md:left-4 lg:left-8 "

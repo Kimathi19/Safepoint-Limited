@@ -18,7 +18,7 @@ const EyeProtection = () => {
         Shop With Us
       </h3>
       <h1 className="text-2xl font-bold underline underline-offset-4 mb-12">
-        Body Protection Products
+        Eye Protection Products
       </h1>
       <div className="body-protection-wrapper grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center mx-auto ">
         {eyeProtectionProducts.map((product) => (

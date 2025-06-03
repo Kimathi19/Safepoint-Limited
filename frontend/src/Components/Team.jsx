@@ -9,7 +9,7 @@ const teamMembers = [
   {
     id: 1,
     src: Breta,
-    name: "John Doe",
+    // name: "John Doe",
     role: "Director",
     description:
       "Leading Safepoint's vision and strategic direction with expertise in safety solutions.",
@@ -17,7 +17,7 @@ const teamMembers = [
   {
     id: 2,
     src: Brian,
-    name: "Jane Doe",
+    // name: "Jane Doe",
     role: "Operations Manager",
     description:
       "Oversees daily operations, ensuring all safety protocols and standards are met.",
@@ -25,7 +25,7 @@ const teamMembers = [
   {
     id: 3,
     src: Fatma,
-    name: "Bob Doe",
+    // name: "Bob Doe",
     role: "Quality Assurance Specialist",
     description:
       "Focused on maintaining the highest safety and quality standards across all products.",
@@ -33,7 +33,7 @@ const teamMembers = [
   {
     id: 4,
     src: Mark,
-    name: "Alice Doe",
+    // name: "Alice Doe",
     role: "Safety Consultant",
     description:
       "Provides expert advice on safety compliance and risk management strategies.",

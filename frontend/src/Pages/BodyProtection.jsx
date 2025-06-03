@@ -4,9 +4,10 @@ import PolycottonCoverall from "./Assets/PolyCotton Coverall (Red).png";
 import WorkwearCoverall from "./Assets/Workwear coveralls.png";
 import { Link } from "react-router-dom";
 
+
 //  body protection products
 const bodyProtectionProducts = [
-  {
+  { 
     id: 1,
     image: Motorbikecoverall,
     name: "Motorbike Polycotton Coverall (Blue)",
