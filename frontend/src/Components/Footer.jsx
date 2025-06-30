@@ -123,7 +123,7 @@ export default function Footer() {
         </p>
         <p className="text-sm font-bold">
           Developed with 🤎 by{" "}
-          <a href="https://github.com/Kimathi19" target="_blank">
+          <a href="https://briankimathi.vercel.app/" target="_blank">
             _Kimathi
           </a>
         </p>
